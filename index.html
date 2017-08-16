@@ -20,7 +20,7 @@
 			<!-- 这部分应该是默认隐藏和显示当有待办事项 -->
 			<section class="main">
 				<input id="toggle-all" class="toggle-all" type="checkbox">
-				<label for="toggle-all">Mark all as complete</label>
+				<label for="toggle-all" ng-click="selectAll()">Mark all as complete</label>
 				<ul class="todo-list">
 					<!-- 这些只是为了显示列表项的结构。 -->
 					<!-- 当编辑完成时，列表项应该得到类“编辑”和“完成”。 -->

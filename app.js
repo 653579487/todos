@@ -79,7 +79,16 @@
 		/*停止编辑*/
 		$scope.save = function(){
 			$scope.editing = -1;
-		}
+		};
+
+		/*实现全选*/
+		var now =true;
+		$scope.selectAll =function(){
+			for(var i=0; i<$scope.data.length; i++){
+				$scope.data[i].completed = now;
+			}
+			now = !now;
+		};
 
 
 
